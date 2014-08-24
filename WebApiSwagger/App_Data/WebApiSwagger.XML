@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiSwagger</name>
+    </assembly>
+    <members>
+        <member name="M:WebApiSwagger.Controllers.StudentsController.Get">
+            <summary>
+            Get all students
+            </summary>
+            <remarks>Get an array of all students</remarks>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:WebApiSwagger.Controllers.StudentsController.Get(System.String)">
+            <summary>
+            Get student
+            </summary>
+            <param name="userName">Unique username</param>
+            <remarks>Get signle student by providing username</remarks>
+            <response code="404">Not found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:WebApiSwagger.Controllers.StudentsController.Post(WebApiSwagger.Models.Student)">
+            <summary>
+            Add new student
+            </summary>
+            <param name="student">Student Model</param>
+            <remarks>Insert new student</remarks>
+            <response code="400">Bad request</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="M:WebApiSwagger.Controllers.StudentsController.Delete(System.String)">
+            <summary>
+            Delete student
+            </summary>
+            <param name="userName">Unique username</param>
+            <remarks>Delete existing student</remarks>
+            <response code="404">Not found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="T:WebApiSwagger.Models.Student">
+            <summary>
+            Student Model
+            </summary>
+        </member>
+        <member name="P:WebApiSwagger.Models.Student.UserName">
+            <summary>
+            Username
+            </summary>
+        </member>
+        <member name="P:WebApiSwagger.Models.Student.FirstName">
+            <summary>
+            First Name
+            </summary>
+        </member>
+        <member name="P:WebApiSwagger.Models.Student.LastName">
+            <summary>
+            Last Name (Surname)
+            </summary>
+        </member>
+        <member name="P:WebApiSwagger.Models.Student.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:WebApiSwagger.Models.Student.DateOfBirth">
+            <summary>
+            Birth Date
+            </summary>
+        </member>
+    </members>
+</doc>
